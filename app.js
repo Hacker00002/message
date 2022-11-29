@@ -3,6 +3,7 @@ const allInput = document.querySelector('#input')
 const allBtn = document.querySelector('#button')
 const allText = document.querySelector('div')
 const allBtn2 = document.querySelector('#btn')
+const span = document.querySelector('span')
 
 let arr = []
 
@@ -34,10 +35,13 @@ function createItem(){
         h2.style.padding = '5px 20px'
         h2.style.borderRadius = '5px'
     }
+    span.textContent = arr.length;
 }
 
 allBtn2.addEventListener('click', function(){
     arr = []
     
     allText.textContent = ''
+
+    span.textContent = '0'
 })
